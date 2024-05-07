@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55a50a1-3c4f-49bd-aaea-f524db09c927" name="Changes" comment="created comminications between 2 microservices">
-      <change afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="f55a50a1-3c4f-49bd-aaea-f524db09c927" name="Changes" comment="gateway configuration">
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-course.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-eureka.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-gateway.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/msvc-student.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/microservice/gateway/microservicegateway/MicroserviceGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/microservice/gateway/microservicegateway/MicroserviceGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/java/com/microservice/config/MicroserviceConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/java/com/microservice/config/MicroserviceConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-course/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-course/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-student/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-student/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.config-server.executor": "Run",
     "Application.micro-course.executor": "Run",
     "Application.micro-eureka.executor": "Run",
     "Application.micro-gateway.executor": "Run",
@@ -49,7 +57,16 @@
     "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.micro-course">
+  <component name="RunManager" selected="Application.micro-gateway">
+    <configuration name="config-server" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.config.MicroserviceConfigApplication" />
+      <module name="microservice-config" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="micro-course" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -90,6 +107,7 @@
       <item itemvalue="Application.micro-eureka" />
       <item itemvalue="Application.micro-student" />
       <item itemvalue="Application.micro-course" />
+      <item itemvalue="Application.config-server" />
       <item itemvalue="Application.micro-gateway" />
     </list>
   </component>
@@ -110,12 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715120987271</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gateway configuration">
+      <option name="closed" value="true" />
+      <created>1715124239662</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715124239662</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created comminications between 2 microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="created comminications between 2 microservices" />
+    <MESSAGE value="gateway configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="gateway configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
