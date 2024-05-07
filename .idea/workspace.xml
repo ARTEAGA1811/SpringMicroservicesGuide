@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f55a50a1-3c4f-49bd-aaea-f524db09c927" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/business/port/ICourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/business/service/CourseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/client/StudentClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/domain/dto/StudentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/domain/dto/response/StudentByCourseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/persistence/entity/CourseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/persistence/repository/ICoursePersistenceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/java/com/microservice/course/rest/controller/CourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-course/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-eureka/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/business/port/IStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/business/service/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/persistence/entity/StudentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/persistence/repository/IStudentPersistenceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/rest/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f55a50a1-3c4f-49bd-aaea-f524db09c927" name="Changes" comment="created comminications between 2 microservices">
+      <change afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/microservice/gateway/microservicegateway/MicroserviceGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/microservice/gateway/microservicegateway/MicroserviceGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +40,16 @@
   "keyToString": {
     "Application.micro-course.executor": "Run",
     "Application.micro-eureka.executor": "Run",
+    "Application.micro-gateway.executor": "Run",
     "Application.micro-student.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.micro-student">
+  <component name="RunManager" selected="Application.micro-course">
     <configuration name="micro-course" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -84,6 +68,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="micro-gateway" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.gateway.microservicegateway.MicroserviceGatewayApplication" />
+      <module name="microservice-gateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="micro-student" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -97,6 +90,7 @@
       <item itemvalue="Application.micro-eureka" />
       <item itemvalue="Application.micro-student" />
       <item itemvalue="Application.micro-course" />
+      <item itemvalue="Application.micro-gateway" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +102,20 @@
       <option name="presentableId" value="Default" />
       <updated>1715112273666</updated>
     </task>
+    <task id="LOCAL-00001" summary="created comminications between 2 microservices">
+      <option name="closed" value="true" />
+      <created>1715120987271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715120987271</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created comminications between 2 microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="created comminications between 2 microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
